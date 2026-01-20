@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>William Jefferson Dotcom</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@200;400;500;700;900&family=DM+Serif+Text:ital@0;1&display=swap');
+    
+    body {
+      font-family: 'Archivo', sans-serif;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+    
+    h1, h2, h3 {
+      font-family: 'DM Serif Text', serif;
+    }
+
+    .bg-custom-peach {
+      background-color: #FFE5E0;
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom": "https://esm.sh/react-dom@^19.2.3",
+    "react-dom/client": "https://esm.sh/react-dom@^19.2.3/client",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-custom-peach">
+  <div id="root"></div>
+  <!-- Standard entry point for modern browsers -->
+  <script type="module" src="./index.tsx"></script>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
