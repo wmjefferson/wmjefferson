@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import Layout from './components/Layout';
 // Make sure the capitalization matches the filename exactly!
-// Make sure the capitalization matches the filename exactly!
-import handshakeLogo from './assets/icons/HandshakeLogo.png';
-import linkedinLogo from './assets/icons/LinkedInLogo.png';
+import handshakeLogo from './assets/icons/handshakelogo.png';
+import linkedinLogo from './assets/icons/linkedinlogo.png';
 
 /**
  * App: The core controller for William's minimalist portfolio.
