@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
 import Layout from './components/Layout';
+// Make sure the capitalization matches the filename exactly!
+// Make sure the capitalization matches the filename exactly!
+import handshakeLogo from './assets/icons/HandshakeLogo.png';
+import linkedinLogo from './assets/icons/LinkedInLogo.png';
 
 /**
  * App: The core controller for William's minimalist portfolio.
@@ -271,9 +275,9 @@ const App: React.FC = () => {
             title="Handshake Profile"
           >
             <div className="w-8 h-8 flex items-center justify-center bg-[#d2fa4c] rounded-sm">
-              <img 
-                src="/assets/icons/handshakelogo.png" 
-                alt="Handshake" 
+              <img
+                src={handshakeLogo}
+                alt="Handshake"
                 className="h-5 w-auto object-contain"
               />
             </div>
@@ -287,9 +291,9 @@ const App: React.FC = () => {
             title="LinkedIn Profile"
           >
             <div className="w-8 h-8 flex items-center justify-center bg-[#ffffff] rounded-sm">
-              <img 
-                src="/assets/icons/linkedinlogo.png" 
-                alt="LinkedIn" 
+              <img
+                src={linkedinLogo}
+                alt="LinkedIn"
                 className="h-5 w-auto object-contain"
               />
             </div>
