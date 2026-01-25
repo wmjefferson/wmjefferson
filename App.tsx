@@ -3,7 +3,7 @@ import Layout from './components/Layout';
 // Make sure the capitalization matches the filename exactly!
 import handshakeLogo from './assets/icons/handshakelogo.png';
 import linkedinLogo from './assets/icons/linkedinlogo.png';
-
+import profilePic from './assets/profile.png';
 /**
  * App: The core controller for William's minimalist portfolio.
  * 
@@ -210,9 +210,9 @@ const App: React.FC = () => {
             </div>
             
             <div className="w-[144px] h-[144px] overflow-hidden bg-[#FF9100]">
-              <img 
-                src="/assets/profile.png" 
-                alt="Portrait of William Jefferson" 
+              <img
+                src={profilePic}   // <--- This was "/assets/profile.png"
+                alt="Portrait of William Jefferson"
                 className="w-full h-full object-cover"
               />
             </div>
