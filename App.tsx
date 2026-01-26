@@ -4,10 +4,10 @@ import Layout from './components/Layout';
 import handshakeLogo from './assets/icons/handshakelogo.png';
 import linkedinLogo from './assets/icons/linkedinlogo.png';
 import profilePic from './assets/profile.png';
+
 /**
  * App: The core controller for William's minimalist portfolio.
- * 
- * DESIGN SPECIFICATION:
+ * * DESIGN SPECIFICATION:
  * - Employs a "Card-in-Frame" aesthetic with a fixed 64px padding.
  * - Uses a state-driven navigation system to swap content and theme colors.
  * - Typography: Archivo for structural clarity, DM Serif Text for editorial elegance.
@@ -62,8 +62,7 @@ const App: React.FC = () => {
 
   return (
     <Layout bgColor={currentBgColor}>
-      {/* 
-         TOP NAVIGATION:
+      {/* TOP NAVIGATION:
          - Brand Identity: "WILLIAM" acts as a persistent 'Home' anchor.
       */}
       <nav className="flex items-center mb-24">
@@ -76,8 +75,7 @@ const App: React.FC = () => {
         </button>
       </nav>
 
-      {/* 
-         MAIN CONTENT ENGINE:
+      {/* MAIN CONTENT ENGINE:
          - Conditional rendering for page transitions.
       */}
       <section className="max-w-5xl flex-1 flex flex-col">
@@ -119,43 +117,43 @@ const App: React.FC = () => {
         )}
 
         {view === 'blue' && (
-/* "I wrote this part, Gemini edited for the site." */
-<div className="flex flex-col animate-in fade-in duration-700">
-  <div
-    className="text-7xl text-black italic leading-[1.1] mb-10"
-    style={{ fontFamily: "'DM Serif Text', serif" }}
-  >
-    Here is where I am
-  </div>
+          /* "I wrote this part, Gemini edited for the site." */
+          <div className="flex flex-col animate-in fade-in duration-700">
+            <div
+              className="text-7xl text-black italic leading-[1.1] mb-10"
+              style={{ fontFamily: "'DM Serif Text', serif" }}
+            >
+              Here is where I am
+            </div>
 
-  <div className="text-2xl leading-relaxed text-black max-w-4xl font-light mb-8 space-y-6">
-    <p>
-      I am William "Bill" Jefferson, a sophomore at City College of San Francisco,
-      a Studio Arts major expecting to transfer to a Cal State school in Spring
-      2027.
-    </p>
-    <p>
-      I am an INFP who has a beautiful dog that loves everyone. My top O*NET
-      codes are Artistic, Enterprising, and Conventional, and my VIA Strengths
-      include Zest, Curiosity, and Humor.
-    </p>
-    <p>
-      I am an average photographer with lukewarm poetry writing skills, that
-      hopes to one day become a flawed painter. And my goals for playing the
-      piano are not based in reality.
-    </p>
-    <p>
-      I am learning to combine the abilities of AI with my own insight and
-      capability, bringing design to this website and distinctiveness to the
-      sometimes uncomfortable process of looking for an internship.
-    </p>
-    <p>
-      Though, having taken this first step I feel successful, and I'm more
-      confident in my potential to learn the professional world as well as the
-      technical one.
-    </p>
-  </div>
-</div>
+            <div className="text-2xl leading-relaxed text-black max-w-4xl font-light mb-8 space-y-6">
+              <p>
+                I am William "Bill" Jefferson, a sophomore at City College of San Francisco,
+                a Studio Arts major expecting to transfer to a Cal State school in Spring
+                2027.
+              </p>
+              <p>
+                I am an INFP who has a beautiful dog that loves everyone. My top O*NET
+                codes are Artistic, Enterprising, and Conventional, and my VIA Strengths
+                include Zest, Curiosity, and Humor.
+              </p>
+              <p>
+                I am an average photographer with lukewarm poetry writing skills, that
+                hopes to one day become a flawed painter. And my goals for playing the
+                piano are not based in reality.
+              </p>
+              <p>
+                I am learning to combine the abilities of AI with my own insight and
+                capability, bringing design to this website and distinctiveness to the
+                sometimes uncomfortable process of looking for an internship.
+              </p>
+              <p>
+                Though, having taken this first step I feel successful, and I'm more
+                confident in my potential to learn the professional world as well as the
+                technical one.
+              </p>
+            </div>
+          </div>
         )}
 
         {view === 'been' && (
@@ -237,7 +235,7 @@ const App: React.FC = () => {
             
             <div className="w-[144px] h-[144px] overflow-hidden bg-[#FF9100]">
               <img
-                src={profilePic}   // <--- This was "/assets/profile.png"
+                src={profilePic}
                 alt="Portrait of William Jefferson"
                 className="w-full h-full object-cover"
               />
@@ -315,7 +313,8 @@ const App: React.FC = () => {
             className="transition-opacity duration-300 hover:opacity-60"
             title="LinkedIn Profile"
           >
-            <div className="w-8 h-8 flex items-center justify-center bg-[#ffffff] rounded-sm">
+            {/* UPDATED: Changed width from w-8 (32px) to w-[38px] to accommodate the wider 776x660 logo */}
+            <div className="w-[38px] h-8 flex items-center justify-center bg-[#ffffff] rounded-sm">
               <img
                 src={linkedinLogo}
                 alt="LinkedIn"
