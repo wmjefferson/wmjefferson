@@ -119,17 +119,43 @@ const App: React.FC = () => {
         )}
 
         {view === 'blue' && (
-          <div className="flex flex-col animate-in fade-in duration-700">
-            <div 
-              className="text-7xl text-black italic leading-[1.1] mb-10"
-              style={{ fontFamily: "'DM Serif Text', serif" }}
-            >
-              Here is where I am
-            </div>
-            <p className="text-2xl leading-relaxed text-black max-w-3xl font-light mb-8">
-              I am William "Bill" Jefferson, a Studio Arts sophomore at City College of San Francisco blending creative passion with extensive operational experience. Currently preparing to transfer to the California State University system, I combine artistic vision with a strong history of leadership. Identifying as a creative Mediator (INFP), I value mastery and inner harmony.
-            </p>
-          </div>
+/* "I wrote this part, Gemini edited for the site." */
+<div className="flex flex-col animate-in fade-in duration-700">
+  <div
+    className="text-7xl text-black italic leading-[1.1] mb-10"
+    style={{ fontFamily: "'DM Serif Text', serif" }}
+  >
+    Here is where I am
+  </div>
+
+  <div className="text-2xl leading-relaxed text-black max-w-4xl font-light mb-8 space-y-6">
+    <p>
+      I am William "Bill" Jefferson, a sophomore at City College of San Francisco,
+      a Studio Arts major expecting to transfer to a Cal State school in Spring
+      2027.
+    </p>
+    <p>
+      I am an INFP who has a beautiful dog that loves everyone. My top O*NET
+      codes are Artistic, Enterprising, and Conventional, and my VIA Strengths
+      include Zest, Curiosity, and Humor.
+    </p>
+    <p>
+      I am an average photographer with lukewarm poetry writing skills, that
+      hopes to one day become a flawed painter. And my goals for playing the
+      piano are not based in reality.
+    </p>
+    <p>
+      I am learning to combine the abilities of AI with my own insight and
+      capability, bringing design to this website and distinctiveness to the
+      sometimes uncomfortable process of looking for an internship.
+    </p>
+    <p>
+      Though, having taken this first step I feel successful, and I'm more
+      confident in my potential to learn the professional world as well as the
+      technical one.
+    </p>
+  </div>
+</div>
         )}
 
         {view === 'been' && (
