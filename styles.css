@@ -1,4 +1,3 @@
-
 /* Import premium Google Fonts for high-end aesthetic */
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;700;900&family=DM+Serif+Text:ital@0;1&display=swap');
 
@@ -19,7 +18,7 @@ h1, h2, h3 {
   color: #000000;
 }
 
-/* The primary layout wrapper that manages the fixed 64px margin */
+/* The primary layout wrapper */
 .layout-container {
   position: fixed;
   top: 0;
@@ -29,8 +28,17 @@ h1, h2, h3 {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 64px;
   box-sizing: border-box;
+  
+  /* RESPONSIVE UPDATE: Mobile First */
+  padding: 16px; /* Small padding on phones to maximize screen real estate */
+}
+
+/* Restore the large "Frame" aesthetic on tablets and desktops (768px and up) */
+@media (min-width: 768px) {
+  .layout-container {
+    padding: 64px; 
+  }
 }
 
 /* The centerpiece white rectangular container */
@@ -49,10 +57,19 @@ h1, h2, h3 {
   margin-left: auto;
   margin-right: auto;
   height: 100%;
-  padding: 48px;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
+
+  /* RESPONSIVE UPDATE: Mobile First */
+  padding: 24px; /* Reduced inner padding for mobile */
+}
+
+/* Restore the spacious inner padding on tablets and desktops */
+@media (min-width: 768px) {
+  .content-area {
+    padding: 48px;
+  }
 }
 
 /* Navigation banner styles for the header area */
@@ -60,7 +77,14 @@ h1, h2, h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 96px;
+  /* RESPONSIVE UPDATE: Reduced margin on mobile */
+  margin-bottom: 48px;
+}
+
+@media (min-width: 768px) {
+  .nav-banner {
+    margin-bottom: 96px;
+  }
 }
 
 /* Brand/Logo typography styling - Updated to Archivo */
@@ -75,9 +99,16 @@ h1, h2, h3 {
 /* Massive typographic heading style - Updated to DM Serif Text */
 .hero-title {
   font-family: 'DM Serif Text', serif;
-  font-size: 4.5rem;
+  /* RESPONSIVE UPDATE: Smaller font on mobile */
+  font-size: 2.5rem; 
   font-weight: 400; /* DM Serif Text is naturally heavy */
   margin-bottom: 32px;
   line-height: 1.05;
   color: #000000;
+}
+
+@media (min-width: 768px) {
+  .hero-title {
+    font-size: 4.5rem;
+  }
 }
