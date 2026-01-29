@@ -225,6 +225,16 @@ const App: React.FC = () => {
                 I'm always open to new connections, professional opportunities, or creative projects. 
                 Feel free to drop me a line.
               </p>
+              <p>
+                <a 
+                  href="https://github.com/wmjefferson/wmjefferson.git" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="border-b border-black hover:opacity-50 transition-opacity"
+                >
+                  Git.
+                </a>
+              </p>
             </div>
           </div>
         )}
