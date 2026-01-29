@@ -230,7 +230,7 @@ const App: React.FC = () => {
                   href="https://github.com/wmjefferson/wmjefferson.git" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="border-b border-black hover:opacity-50 transition-opacity"
+                  className="italic border-b border-black hover:opacity-50 transition-opacity"
                 >
                   Git.
                 </a>
