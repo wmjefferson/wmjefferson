@@ -200,6 +200,7 @@ const App: React.FC = () => {
             </div>
 
             <div className="text-lg md:text-2xl leading-relaxed text-black max-w-4xl font-light mb-8 space-y-6">
+              {/*}
               <p>
                 This is{' '}
                 <a 
@@ -212,6 +213,7 @@ const App: React.FC = () => {
                 </a>
                 .
               </p>
+              */}
               <p>
                 My email address is:{' '}
                 <a 
@@ -257,6 +259,7 @@ const App: React.FC = () => {
             </div>
             */}
 
+        
             <p className="text-lg md:text-2xl leading-relaxed text-black max-w-3xl font-light">
               <a 
                 href="https://www.jeffersonwm.com" 
