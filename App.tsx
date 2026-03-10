@@ -305,7 +305,7 @@ const App: React.FC = () => {
           >
             <div className="h-8 px-2 flex items-center justify-center bg-[#ffffff] rounded-sm">
               <img
-                src={handshakeWordmark}
+                src={handshakewordmark}
                 alt="Handshake"
                 className="h-4 w-auto object-contain"
               />
@@ -321,7 +321,7 @@ const App: React.FC = () => {
           >
             <div className="h-8 px-2 flex items-center justify-center bg-[#ffffff] rounded-sm">
               <img
-                src={linkedinWordmark}
+                src={linkedinwordmark}
                 alt="LinkedIn"
                 className="h-4 w-auto object-contain"
               />
