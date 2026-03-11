@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Layout from './components/Layout';
-import handshakeWordmark from './assets/icons/handshakewordmark.png';
-import linkedinWordmark from './assets/icons/linkedinwordmark.png';
+import handshakewordmark from './public/icons/handshakewordmark.png';
+import linkedinwordmark from './public/icons/linkedinwordmark.png';
 import profilePic from './assets/profile.png';
 
 /**
