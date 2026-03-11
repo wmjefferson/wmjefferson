@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Layout from './components/Layout';
 import handshakewordmark from './public/icons/handshakewordmark.png';
 import linkedinwordmark from './public/icons/linkedinwordmark.png';
-import profilePic from './assets/profile.png';
+import profilepic from './public/profile.png'
 
 /**
  * App: The core controller for William's minimalist portfolio.
@@ -200,11 +200,11 @@ const App: React.FC = () => {
             </div>
 
             <div className="text-lg md:text-2xl leading-relaxed text-black max-w-4xl font-light mb-8 space-y-6">
-              {/*}
+
               <p>
                 This is{' '}
                 <a 
-                  href="/assets/docs/wmjefferson11a.pdf" 
+                  href="/docs/wmjefferson11a.pdf" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="italic border-b border-black hover:opacity-50 transition-opacity"
@@ -213,7 +213,7 @@ const App: React.FC = () => {
                 </a>
                 .
               </p>
-              */}
+
               <p>
                 My email address is:{' '}
                 <a 
@@ -248,18 +248,16 @@ const App: React.FC = () => {
                 © 2026 William Jefferson.
               </p>
             </div>
-            {/*
+            {/*}
             THIS IS THE BITCOIN ORANGE PROFILE PICTURE BLOCK
             <div className="w-[144px] h-[144px] overflow-hidden bg-[#FF9100]">
               <img
-                src={profilePic}
+                src={profilepic}
                 alt="Portrait of William Jefferson"
                 className="w-full h-full object-cover"
               />
             </div>
-            */}
-
-        
+            */},
             <p className="text-lg md:text-2xl leading-relaxed text-black max-w-3xl font-light">
               <a 
                 href="https://www.jeffersonwm.com" 

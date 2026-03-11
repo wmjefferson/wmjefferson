@@ -1,9 +1,21 @@
+# Force HTTPS and www
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !^www\. [NC,OR]
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://www.wmjefferson.com%{REQUEST_URI} [L,R=301]
+
+# Catch-all 404s → www.wmjefferson.com
+ErrorDocument 404 https://www.wmjefferson.com
+
+# React Router (only after redirects)
 <IfModule mod_rewrite.c>
-  RewriteEngine On
   RewriteBase /
-  RewriteRule ^index\.html$ - [L]
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteCond %{REQUEST_FILENAME} !-l
-  RewriteRule . /index.html [L]
+  
+  # Don't rewrite real files or directories (PDFs, images, etc.)
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+  
+  # Everything else → React Router
+  RewriteRule ^ index.html [L]
 </IfModule>
