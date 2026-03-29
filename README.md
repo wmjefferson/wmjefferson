@@ -1,20 +1,13 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# I am William Jefferson...
+![William Jefferson](https://jeffersonwm.com/pic/gitprofjeffersonwm.jpg)
+## ...and this is my Git.
 
-# Run and deploy your AI Studio app
+These are tools for personal use but you can enjoy them also. They serve specific purposes; from my position I have focused less on code and more on design, functionality, and experience. Please inquire, I'm glad to explain where this is coming from.
 
-This contains everything you need to run your app locally.
+They are made with Vite, React, and TypeScript, which is quite different from the HTML/CSS/jQuery of my distant past. I've been using VS Code for file structures and editing, and for GitHub and Node which I'm learning as I go along. With help from AI, I'm learning how the internet functions - 'full-stack' is what we're calling it but don't put that on my job applications just yet.
 
-View your app in AI Studio: https://ai.studio/apps/drive/1qrkghA_egWZGPmBz3eU4xmUmFei4OaVR
+## I would seriously consider recommending this new and improved product to a friend or colleague!
 
-## Run Locally
+And speaking of jobs, if you got here from social media, welcome and please take a look around. I've failed many times to get this far.
 
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+Thanks for reading. I put this file together with [StackEdit](https://github.com/benweet/stackedit/).
