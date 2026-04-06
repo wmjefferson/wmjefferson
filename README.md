@@ -11,3 +11,5 @@ They are made with Vite, React, and TypeScript, which is quite different from th
 And speaking of jobs, if you got here from social media, welcome and please take a look around. I've failed many times to get this far.
 
 Thanks for reading. I put this file together with [StackEdit](https://github.com/benweet/stackedit/).
+
+## I am in the process of consolidating repositories along with the structurs of the site itself. So some parts have polish and others not so much.
