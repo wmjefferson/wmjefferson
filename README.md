@@ -1,6 +1,6 @@
 # I am William Jefferson...
 
-![William Jefferson](https://jeffersonwm.com/pic/gitprofjeffersonwm.jpg)
+![William Jefferson](https://www.wmjefferson.com/couch.png))
 
 ## ...and this is my Git.
 
@@ -15,7 +15,7 @@ They are made with Vite, React, and TypeScript, which is quite different from th
 - dookydetective, the photos of my dog. And nothing else.
 - jeffersonwm-legacy is just that. The unsuccesses that got me here.
 
-I'm working on the readmes and about pages right now.
+I'm working on the readmes and about pages right now, and there are status updates on LinkedIn and Handshake (if I remember).
 
 ## I would seriously consider recommending this new and improved product to a friend or colleague!
 
