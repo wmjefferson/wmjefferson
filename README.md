@@ -8,12 +8,13 @@ These are tools for personal use but you can enjoy them also. they live at wmjef
 
 They are made with Vite, React, and TypeScript, which is quite different from the HTML/CSS/jQuery of my distant past. I've been using both AI applications and web browser, VS Code for files and editing (and terminal), for Git and Node. I'm learning how the internet functions - 'full-stack' is what we're calling it. SQL and how it manages data, connecting application to data, networks and their functions with Cloudflare, and learning cPanel again. AI is doing the heavy lifting, I'm manage well with putting togeter the ideas. The project has all the sites I'm working with.
 
-## There are 3 repos + 1 legacy
+## There are 3 repos + 1 legacy + 1 temporary
 
-- wmjefferson, the professional site. Resume and statement and such
-- jeffersonwm, the experiment site. Ideas I have put in motion
+- wmjefferson, the professional site. Resume and statement and such.
+- jeffersonwm, the experiment site. Ideas I have put in motion.
 - dookydetective, the photos of my dog. And nothing else.
-- jeffersonwm-legacy is just that. The unsuccesses that got me here.
+- jeffersonwm-legacy, the unsuccesses that got me here.
+- jeffershizzle, the photography site I've had for more than a decade. Currently offline.
 
 I'm working on the readmes and about pages right now, and there are status updates on LinkedIn and Handshake (if I remember).
 
