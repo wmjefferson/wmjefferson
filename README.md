@@ -1,6 +1,6 @@
 # I am William Jefferson...
 
-![William Jefferson](https://www.wmjefferson.com/couch.png))
+![William Jefferson](https://www.wmjefferson.com/couch.png)
 
 ## ...and this is my Git.
 
