@@ -1,10 +1,3 @@
-<div align="center">
-  <img src="./git-banner.png" alt="William Jefferson Banner" width="800" />
-</div>
-
-
-# Run and deploy your AI Studio app
-
 # I am William Jefferson...
 
 ![William Jefferson](https://www.wmjefferson.com/couch.png)
