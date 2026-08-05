@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Layout from './components/Layout';
 import handshakewordmark from './public/icons/handshakewordmark.png';
 import linkedinwordmark from './public/icons/linkedinwordmark.png';
-import profilepic from './public/profile.png'
+import lionImage from './public/lion.jpg';
 
 /**
  * App: The core controller for William's minimalist portfolio.
@@ -36,6 +36,7 @@ const App: React.FC = () => {
   };
 
   const currentBgColor = colors[view];
+  const showFooterLogos = ['home', 'alt', 'jefferson'].includes(view);
 
   const handleBack = () => {
     if (view === 'message') {
@@ -124,10 +125,10 @@ const App: React.FC = () => {
                 I am William "Bill" Jefferson, a sophomore at City College of San Francisco, a Studio Arts major expecting to transfer to a Cal State school for the Spring 2027 semester.
               </p>
               <p>
-                I am an INFP who has a beautiful dog that loves everyone. My top O*NET codes are Artistic, Enterprising, and Conventional, and my VIA Strengths include Zest, Curiosity, and Humor.
+                I am an average photographer with lukewarm poetry writing skills, that hopes to one day become a flawed painter. And my goals for playing the piano are not based in reality.
               </p>
               <p>
-                I am an average photographer with lukewarm poetry writing skills, that hopes to one day become a flawed painter. And my goals for playing the piano are not based in reality.
+                I am an INFP who has a beautiful dog that loves everyone. My top O*NET codes are Artistic, Enterprising, and Conventional, and my VIA Strengths include Zest, Curiosity, and Humor.
               </p>
               <p>
                 I am learning to combine the abilities of AI with my own insight and capability, bringing design to this website and distinctiveness to the sometimes uncomfortable process of looking for an internship.
@@ -227,20 +228,61 @@ const App: React.FC = () => {
                 I'm always open to new connections, professional opportunities, or creative projects. 
                 Feel free to drop me a line.
               </p>
+              <div className="space-y-6">
+                <a 
+                  href="https://ccsf.joinhandshake.com/profiles/wmjefferson" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="block transition-opacity duration-300 hover:opacity-60"
+                  title="Handshake Profile"
+                >
+                  <img
+                    src={handshakewordmark}
+                    alt="Handshake"
+                    className="h-4 w-auto object-contain"
+                  />
+                </a>
+                <a 
+                  href="https://www.linkedin.com/in/wmjefferson" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="block transition-opacity duration-300 hover:opacity-60"
+                  title="LinkedIn Profile"
+                >
+                  <img
+                    src={linkedinwordmark}
+                    alt="LinkedIn"
+                    className="h-4 w-auto object-contain"
+                  />
+                </a>
+              </div>
               <p>
                 <a 
-                  href="https://github.com/wmjefferson/wmjefferson.git" 
+                  href="https://github.com/wmjefferson/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="italic border-b border-black hover:opacity-50 transition-opacity"
                 >
-                  Git.
+                  GitHub
+                </a>
+              </p>
+              <p>
+                <a
+                  href="https://jeffersonwm.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="italic border-b border-black hover:opacity-50 transition-opacity"
+                >
+                  Jefferson Williams Dotcom
                 </a>
               </p>
             </div>
           </div>
         )}
 
+        {/*
+        Jefferson/about page is paused for now. Keep the content here so it can
+        be restored without rebuilding the section.
         {view === 'jefferson' && (
           <div className="flex flex-col animate-in fade-in duration-700 space-y-10">
             <div className="space-y-2">
@@ -248,16 +290,13 @@ const App: React.FC = () => {
                 © 2026 William Jefferson.
               </p>
             </div>
-            {/*}
-            THIS IS THE BITCOIN ORANGE PROFILE PICTURE BLOCK
-            <div className="w-[144px] h-[144px] overflow-hidden bg-[#FF9100]">
+            <div className="w-[220px] h-[220px] overflow-hidden sm:w-[280px] sm:h-[280px] md:w-[400px] md:h-[400px]">
               <img
-                src={profilepic}
-                alt="Portrait of William Jefferson"
+                src={lionImage}
+                alt="Lion artwork"
                 className="w-full h-full object-cover"
               />
             </div>
-            */},
             <p className="text-lg md:text-2xl leading-relaxed text-black max-w-3xl font-light">
               <a 
                 href="https://www.jeffersonwm.com" 
@@ -270,18 +309,16 @@ const App: React.FC = () => {
             </p>
           </div>
         )}
+        */}
       </section>
 
       {/* FOOTER BANNER */}
-      <footer className="flex items-center justify-between mt-auto pt-12 md:pt-24 min-h-[3rem]">
+      <footer className="mt-12 flex min-h-[3rem] flex-col items-start gap-4 pb-16 pt-10 md:mt-auto md:flex-row md:items-end md:justify-between md:pb-4 md:pt-24">
         <div className="flex items-center">
           {view === 'home' ? (
-            <button 
-              onClick={() => changeView('jefferson')}
-              className="text-xl font-black tracking-tighter text-black transition-colors duration-300 cursor-pointer uppercase focus:outline-none hover:text-[#FFE5E0]"
-            >
+            <span className="text-xl font-black tracking-tighter text-black uppercase">
               JEFFERSON
-            </button>
+            </span>
           ) : (
             <button 
               onClick={handleBack}
@@ -293,7 +330,8 @@ const App: React.FC = () => {
           )}
         </div>
 
-        <div className="flex items-center gap-6">
+        {showFooterLogos && (
+          <div className="flex flex-wrap items-center gap-x-4 gap-y-3 sm:flex-nowrap sm:gap-6 md:justify-end">
           <a 
             href="https://ccsf.joinhandshake.com/profiles/wmjefferson" 
             target="_blank" 
@@ -301,11 +339,11 @@ const App: React.FC = () => {
             className="transition-opacity duration-300 hover:opacity-60"
             title="Handshake Profile"
           >
-            <div className="h-8 px-2 flex items-center justify-center bg-[#ffffff] rounded-sm">
+            <div className="h-7 flex items-center justify-center bg-[#ffffff] rounded-sm sm:h-8">
               <img
                 src={handshakewordmark}
                 alt="Handshake"
-                className="h-4 w-auto object-contain"
+                className="h-3.5 w-auto object-contain sm:h-4"
               />
             </div>
           </a>
@@ -317,15 +355,16 @@ const App: React.FC = () => {
             className="transition-opacity duration-300 hover:opacity-60"
             title="LinkedIn Profile"
           >
-            <div className="h-8 px-2 flex items-center justify-center bg-[#ffffff] rounded-sm">
+            <div className="h-7 flex items-center justify-center bg-[#ffffff] rounded-sm sm:h-8">
               <img
                 src={linkedinwordmark}
                 alt="LinkedIn"
-                className="h-4 w-auto object-contain"
+                className="h-3.5 w-auto object-contain sm:h-4"
               />
             </div>
           </a>
-        </div>
+          </div>
+        )}
       </footer>
     </Layout>
   );

@@ -16,16 +16,13 @@ interface LayoutProps {
  */
 const Layout: React.FC<LayoutProps> = ({ children, bgColor = '#FFE5E0' }) => {
   return (
-    /* 
+    /*
        OUTER WRAPPER:
-       - 'fixed inset-0': Pins this container to the edges of the browser window.
-       - style={{ backgroundColor: bgColor }}: Dynamically sets the background color.
-       - 'flex items-center justify-center': Perfectly centers the inner white rectangle.
-       - 'p-16': Applies exactly 64px (4rem) of padding on all sides.
-       - 'overflow-hidden': Prevents the main body from scrolling.
+       - Uses lighter padding on smaller/shorter screens so the border frame
+         doesn't overpower the canvas on mobile.
     */
     <div 
-      className="fixed inset-0 flex items-center justify-center p-16 overflow-hidden transition-colors duration-500"
+      className="fixed inset-0 flex items-center justify-center px-4 py-4 sm:px-6 sm:py-6 md:px-10 md:py-10 lg:p-16 overflow-hidden transition-colors duration-500"
       style={{ backgroundColor: bgColor }}
     >
       
@@ -36,13 +33,11 @@ const Layout: React.FC<LayoutProps> = ({ children, bgColor = '#FFE5E0' }) => {
       */}
       <main className="bg-white w-full h-full rounded-none overflow-auto relative">
         
-        {/* 
+        {/*
            CONTENT CONSTRAINER:
-           - 'max-w-6xl mx-auto': Prevents text stretching.
-           - 'px-12 py-12': Internal padding.
-           - 'flex flex-col': Standard vertical layout.
+           - Uses smaller interior padding on mobile for breathing room.
         */}
-        <div className="max-w-6xl mx-auto h-full px-12 py-12 flex flex-col">
+        <div className="max-w-6xl mx-auto h-full px-6 py-6 sm:px-8 sm:py-8 md:px-12 md:py-12 flex flex-col">
           {children}
         </div>
       </main>
