@@ -5,13 +5,13 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && node ..\\jeffersonwm\\scripts\\finish-stamp.mjs --label \"build\"",
     "preview": "vite preview",
     "version": "node -e \"console.log('Use npm run version:patch, npm run version:minor, or npm run version:major')\"",
-    "version:patch": "npm version patch --no-git-tag-version",
-    "version:minor": "npm version minor --no-git-tag-version",
-    "version:major": "npm version major --no-git-tag-version",
-    "publish": "node scripts/publish.mjs"
+    "version:patch": "npm version patch --no-git-tag-version && node ..\\jeffersonwm\\scripts\\finish-stamp.mjs --label \"version:patch\"",
+    "version:minor": "npm version minor --no-git-tag-version && node ..\\jeffersonwm\\scripts\\finish-stamp.mjs --label \"version:minor\"",
+    "version:major": "npm version major --no-git-tag-version && node ..\\jeffersonwm\\scripts\\finish-stamp.mjs --label \"version:major\"",
+    "publish": "node scripts/publish.mjs && node ..\\jeffersonwm\\scripts\\finish-stamp.mjs --label \"publish\""
   },
   "dependencies": {
     "react": "^19.2.3",
