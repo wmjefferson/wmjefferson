@@ -1,8 +1,8 @@
-# Force HTTPS and www
+# Force HTTPS, but preserve whichever hostname resolved successfully.
+# This keeps both wmjefferson.com and www.wmjefferson.com usable on stricter networks.
 RewriteEngine On
-RewriteCond %{HTTP_HOST} !^www\. [NC,OR]
 RewriteCond %{HTTPS} off
-RewriteRule ^ https://www.wmjefferson.com%{REQUEST_URI} [L,R=301]
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 # Use custom 404 page
 ErrorDocument 404 /404.html
